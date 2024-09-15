@@ -1,4 +1,17 @@
 from flask import Flask
+from scipy.spatial import distance as dist
+from imutils.video import VideoStream
+from imutils import face_utils
+from threading import Thread
+import sys
+import numpy as np
+import playsound
+import argparse
+import imutils
+import time
+import dlib
+import cv2
+import matplotlib.pyplot as plt
 
 app = Flask(__name__)
 
